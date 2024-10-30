@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://d4icrwfhowdjr"]
+
+[ext_resource type="Texture2D" uid="uid://enho5w5oe6qh" path="res://Art Assets/UI/table/table0.png" id="1_hbdyw"]
+[ext_resource type="Script" path="res://Scripts/table_x.gd" id="1_slp17"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8du87"]
+size = Vector2(32, 32)
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_slp17")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(2, 2)
+texture = ExtResource("1_hbdyw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_8du87")

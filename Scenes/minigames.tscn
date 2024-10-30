@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://c0q6rweuvdb62"]
+
+[ext_resource type="PackedScene" uid="uid://bsnnhj4j1h6c6" path="res://Scenes/circular_board.tscn" id="1_0b6yw"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Node2D" parent="." instance=ExtResource("1_0b6yw")]

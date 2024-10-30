@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://d17haihnrkse8"]
+
+[ext_resource type="Texture2D" uid="uid://bjfb2miwrbv4i" path="res://Art Assets/UI/table/table2.png" id="1_wwhmd"]
+[ext_resource type="Texture2D" uid="uid://xlo817tuiumw" path="res://Art Assets/UI/table/table1.png" id="2_km303"]
+
+[node name="Area2D" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(2, 2)
+texture = ExtResource("1_wwhmd")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(64, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("2_km303")
