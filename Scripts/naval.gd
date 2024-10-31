@@ -25,6 +25,10 @@ func _ready():
 	# Desenha o tabuleiro circular
 	queue_redraw()  # Chama o _draw() para desenhar o tabuleiro
 
+func _process(delta: float) -> void:
+	if Input.is_action_just_pressed("ui_cancel"):
+		get_tree().change_scene_to_file("res://Scenes/game.over.tscn")
+	
 func _draw():
 	# Define o tamanho e as cores das células
 	var cell_radius = 10
@@ -65,6 +69,7 @@ func _input(event):
 			if check_all_ships_sunk():  # Verifica se todos os navios foram afundados
 				game_over = true
 				print("Jogo Finalizado: Todos os navios foram afundados!")
+				get_tree().change_scene_to_file("res://Scenes/game.over.tscn")
 
 func get_cell_from_position(mouse_pos):
 	# Calcula em qual anel e célula o clique ocorreu

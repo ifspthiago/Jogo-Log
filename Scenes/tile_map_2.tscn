@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bvxp617x42i7f"]
+
+[ext_resource type="TileSet" uid="uid://b05c3lirrpxaw" path="res://Art Assets/Tiles/tilesmap.tres" id="1_uff32"]
+
+[node name="TileMap2" type="TileMap"]
+tile_set = ExtResource("1_uff32")
+format = 2
+layer_0/tile_data = PackedInt32Array(2031630, 851987, 0, 2031618, 851987, 0, 2031622, 917523, 0, 2293786, 917523, 0, 2293882, 917523, 0, 2293904, 851987, 0, 2031751, 851987, 0, 2293927, 851987, 0)

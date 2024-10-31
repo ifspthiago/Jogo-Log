@@ -5,16 +5,16 @@ const PushableCratePath = "res://Scenes/crate.tscn"
 
 # Dicionário que mapeia o id das caixas para suas posições
 var spawn_positions = {
-	0: Vector2(1100, 100),
-	1: Vector2(1100, 300),
-	2: Vector2(1200, 300),
-	3: Vector2(1300, 300),
-	4: Vector2(1400, 300),
-	5: Vector2(1500, 300),
-	6: Vector2(1600, 300),
-	7: Vector2(1700, 300),
-	8: Vector2(1800, 300),
-	9: Vector2(1900, 300)
+	0: Vector2(1360, 400),
+	1: Vector2(1416, 400),
+	2: Vector2(1720, 368),
+	3: Vector2(1768, 368),
+	4: Vector2(1976, 304),
+	5: Vector2(2024, 304),
+	6: Vector2(2192, 304),
+	7: Vector2(2112, 528),
+	8: Vector2(2112, 496),
+	9: Vector2(1896, 552)
 }
 
 func _ready():

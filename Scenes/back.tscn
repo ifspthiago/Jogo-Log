@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://d0jqpesfkxfi2"]
+
+[ext_resource type="Script" path="res://Scripts/back.gd" id="1_cg8gx"]
+[ext_resource type="Texture2D" uid="uid://cc6dd4pkgtdpj" path="res://Art Assets/UI/Large Buttons/Large Buttons/Back Button.png" id="1_w34dy"]
+
+[node name="Button" type="Button"]
+offset_right = 128.0
+offset_bottom = 64.0
+script = ExtResource("1_cg8gx")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(64, 32)
+scale = Vector2(0.213333, 0.24)
+texture = ExtResource("1_w34dy")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

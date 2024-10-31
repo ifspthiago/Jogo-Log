@@ -1,6 +1,6 @@
 extends Area2D
 
-@export var expected_id: int = 1 # ID que estamos esperando
+@export var expected_id: int = 3 # ID que estamos esperando
 signal area2_activated
 
 func _ready():

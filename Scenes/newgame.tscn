@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://btfporhtb38tg"]
+
+[ext_resource type="Texture2D" uid="uid://dm1p2h2j0ud3n" path="res://Art Assets/UI/Large Buttons/Large Buttons/New game Button.png" id="1_8qc6w"]
+[ext_resource type="Script" path="res://Scripts/newgame.gd" id="1_86ksv"]
+
+[node name="Button" type="Button"]
+offset_right = 128.0
+offset_bottom = 64.0
+script = ExtResource("1_86ksv")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(64, 32)
+scale = Vector2(0.215, 0.24)
+texture = ExtResource("1_8qc6w")

@@ -1,7 +1,285 @@
-[gd_scene load_steps=2 format=3 uid="uid://c0q6rweuvdb62"]
+[gd_scene load_steps=16 format=3 uid="uid://c0q6rweuvdb62"]
 
 [ext_resource type="PackedScene" uid="uid://bsnnhj4j1h6c6" path="res://Scenes/circular_board.tscn" id="1_0b6yw"]
+[ext_resource type="Texture2D" uid="uid://b2fkf3kdvrx7b" path="res://Art Assets/Keys/fundo.png" id="2_wkgmd"]
+[ext_resource type="Texture2D" uid="uid://c5unxbooyvena" path="res://Art Assets/Fase_Esgoto/world_tileset.png" id="3_qwlhp"]
+[ext_resource type="Script" path="res://Scripts/player.gd" id="4_axcck"]
+[ext_resource type="Script" path="res://Scripts/malba.gd" id="6_d2ano"]
+[ext_resource type="Texture2D" uid="uid://cfog8wbdpdlim" path="res://Art Assets/NPC/npc0.png" id="6_wbhtb"]
+[ext_resource type="Texture2D" uid="uid://duo8cfhohn1pl" path="res://Art Assets/Keys/E-Key.png" id="8_6rdvm"]
+[ext_resource type="Texture2D" uid="uid://jbitdfb1dnl0" path="res://Art Assets/Characters/Piscando.png" id="8_o5qfo"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0pvw1"]
+texture = ExtResource("3_qwlhp")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+9:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+10:0/0 = 0
+10:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+11:0/0 = 0
+11:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+9:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+10:1/0 = 0
+10:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+11:1/0 = 0
+11:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+8:2/0 = 0
+9:2/0 = 0
+9:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+10:2/0 = 0
+10:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+11:2/0 = 0
+11:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+8:3/0 = 0
+9:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+9:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+8:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+3:7/0 = 0
+5:7/0 = 0
+6:7/0 = 0
+7:7/0 = 0
+8:7/0 = 0
+0:8/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+3:8/0 = 0
+4:8/0 = 0
+5:8/0 = 0
+6:8/0 = 0
+7:8/0 = 0
+8:8/0 = 0
+0:9/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+3:9/0 = 0
+4:9/0 = 0
+5:9/0 = 0
+6:9/0 = 0
+7:9/0 = 0
+0:10/0 = 0
+1:10/0 = 0
+2:10/0 = 0
+3:10/0 = 0
+4:10/0 = 0
+6:10/0 = 0
+0:11/0 = 0
+1:11/0 = 0
+2:11/0 = 0
+3:11/0 = 0
+4:11/0 = 0
+5:11/0 = 0
+0:12/0 = 0
+1:12/0 = 0
+2:12/0 = 0
+3:12/0 = 0
+4:12/0 = 0
+0:13/0 = 0
+1:13/0 = 0
+2:13/0 = 0
+3:13/0 = 0
+4:13/0 = 0
+5:13/0 = 0
+0:14/0 = 0
+1:14/0 = 0
+2:14/0 = 0
+2:14/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:14/0 = 0
+4:14/0 = 0
+0:15/0 = 0
+1:15/0 = 0
+2:15/0 = 0
+2:15/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:15/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_kixw1"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_0pvw1")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cf7es"]
+size = Vector2(216, 354)
+
+[sub_resource type="Animation" id="Animation_kw2os"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_8hgns"]
+resource_name = "player"
+length = 3.0
+loop_mode = 1
+step = 0.4
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.8, 1.2, 1.6, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 5, 4, 5, 2]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_hcfa4"]
+_data = {
+"RESET": SubResource("Animation_kw2os"),
+"player": SubResource("Animation_8hgns")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u5bmt"]
+size = Vector2(12, 30)
 
 [node name="Node2D" type="Node2D"]
 
 [node name="Node2D" parent="." instance=ExtResource("1_0b6yw")]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(344, 352)
+scale = Vector2(0.17, 0.17)
+texture = ExtResource("2_wkgmd")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(1040, 352)
+scale = Vector2(0.17, 0.17)
+texture = ExtResource("2_wkgmd")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = 688.0
+offset_top = 104.0
+offset_right = 1088.0
+offset_bottom = 256.0
+color = Color(0.560784, 0.435294, 0.580392, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+offset_left = 1088.0
+offset_top = 240.0
+offset_right = 1384.0
+offset_bottom = 424.0
+color = Color(0.560784, 0.435294, 0.580392, 1)
+
+[node name="TileMap3" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_kixw1")
+format = 2
+layer_0/tile_data = PackedInt32Array(2883583, 131072, 15, 2818048, 131072, 15, 2752512, 131072, 15, 2818047, 131072, 15, 2752513, 131072, 15, 2818049, 131072, 15, 2752514, 131072, 15, 2818050, 131072, 15, 2752515, 131072, 15, 2818051, 131072, 15, 2752516, 131072, 15, 2818052, 131072, 15, 2752517, 131072, 15, 2818053, 131072, 15, 2752518, 131072, 15, 2818054, 131072, 15, 2752519, 131072, 15, 2818055, 131072, 15, 2752520, 131072, 15, 2818056, 131072, 15, 2752521, 131072, 15, 2818057, 131072, 15, 2752522, 131072, 15, 2818058, 131072, 15, 2752523, 131072, 15, 2818059, 131072, 15, 2752524, 131072, 15, 2818060, 131072, 15, 2752525, 131072, 15, 2818061, 131072, 15, 2752526, 131072, 15, 2818062, 131072, 15, 2752527, 131072, 15, 2818063, 131072, 15, 2752528, 131072, 15, 2818064, 131072, 15, 2752529, 131072, 15, 2818065, 131072, 15, 2752530, 131072, 15, 2818066, 131072, 15, 2752531, 131072, 15, 2818067, 131072, 15, 2752532, 131072, 15, 2818068, 131072, 15, 2752533, 131072, 15, 2818069, 131072, 15, 2752534, 131072, 15, 2818070, 131072, 15, 2752535, 131072, 15, 2818071, 131072, 15, 2752536, 131072, 15, 2818072, 131072, 15, 2752537, 131072, 15, 2818073, 131072, 15, 2752538, 131072, 15, 2818074, 131072, 15, 2752539, 131072, 15, 2818075, 131072, 15, 2752540, 131072, 15, 2818076, 131072, 15, 2752541, 131072, 15, 2818077, 131072, 15, 2752542, 131072, 15, 2818078, 131072, 15, 2752543, 131072, 15, 2818079, 131072, 15, 2752544, 131072, 15, 2818080, 131072, 15, 2752545, 131072, 15, 2818081, 131072, 15, 2752546, 131072, 15, 2818082, 131072, 15, 2752547, 131072, 15, 2818083, 131072, 15, 2752548, 131072, 15, 2818084, 131072, 15, 2752549, 131072, 15, 2818085, 131072, 15, 2752550, 131072, 15, 2818086, 131072, 15, 2752551, 131072, 15, 2818087, 131072, 15, 2752552, 131072, 15, 2818088, 131072, 15, 2752553, 131072, 15, 2818089, 131072, 15, 2752554, 131072, 15, 2818090, 131072, 15, 2752555, 131072, 15, 2818091, 131072, 15, 2752556, 131072, 15, 2818092, 131072, 15, 2752557, 131072, 15, 2818093, 131072, 15, 2752558, 131072, 15, 2818094, 131072, 15, 2752559, 131072, 15, 2818095, 131072, 15, 2752560, 131072, 15, 2818096, 131072, 15, 2752561, 131072, 15, 2818097, 131072, 15, 2752562, 131072, 15, 2818098, 131072, 15, 2752563, 131072, 15, 2818099, 131072, 15, 2752564, 131072, 15, 2818100, 131072, 15, 2752565, 131072, 15, 2818101, 131072, 15, 2752566, 131072, 15, 2818102, 131072, 15, 2752567, 131072, 15, 2818103, 131072, 15, 2752568, 131072, 15, 2818104, 131072, 15, 2752569, 131072, 15, 2818105, 131072, 15, 2752570, 131072, 15, 2818106, 131072, 15, 2752571, 131072, 15, 2818107, 131072, 15, 2752572, 131072, 15, 2818108, 131072, 15, 2752573, 131072, 15, 2818109, 131072, 15, 2752574, 131072, 15, 2818110, 131072, 15, 2752575, 131072, 15, 2818111, 131072, 15, 2752576, 131072, 15, 2818112, 131072, 15, 2752577, 131072, 15, 2818113, 131072, 15, 2752578, 131072, 15, 2818114, 131072, 15, 2752579, 131072, 15, 2818115, 131072, 15, 2752580, 131072, 15, 2818116, 131072, 15, 2752581, 131072, 15, 2818117, 131072, 15, 2752582, 131072, 15, 2818118, 131072, 15, 2752583, 131072, 15, 2818119, 131072, 15, 2752584, 131072, 15, 2818120, 131072, 15, 2752585, 131072, 15, 2818121, 131072, 15, 2752586, 131072, 15, 2818122, 131072, 15, 2752587, 131072, 15, 2818123, 131072, 15, 2752588, 131072, 15, 2818124, 131072, 15, 2752589, 131072, 15, 2818125, 131072, 15, 2752590, 131072, 15, 2818126, 131072, 15, 2752591, 131072, 15, 2818127, 131072, 15, 2752592, 131072, 15, 2818128, 131072, 15, 2752593, 131072, 15, 2818129, 131072, 15, 2752594, 131072, 15, 2818130, 131072, 15, 2752595, 131072, 15, 2818131, 131072, 15, 2752596, 131072, 15, 2818132, 131072, 15, 2752597, 131072, 15, 2818133, 131072, 15, 2752598, 131072, 15, 2818134, 131072, 15, 2752599, 131072, 15, 2818135, 131072, 15, 2752600, 131072, 15, 2818136, 131072, 15)
+
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("6_d2ano")
+
+[node name="Malba" type="Sprite2D" parent="Area2D"]
+position = Vector2(1104, 480)
+scale = Vector2(8, 8)
+texture = ExtResource("6_wbhtb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(1124, 495)
+shape = SubResource("RectangleShape2D_cf7es")
+
+[node name="E" type="Sprite2D" parent="Area2D"]
+visible = false
+position = Vector2(1112, 272)
+scale = Vector2(2, 2)
+texture = ExtResource("8_6rdvm")
+hframes = 2
+
+[node name="Player" type="CharacterBody2D" parent="."]
+position = Vector2(96, 560)
+scale = Vector2(7, 7)
+script = ExtResource("4_axcck")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player"]
+position = Vector2(-1.6, 1)
+scale = Vector2(0.41875, 0.46875)
+texture = ExtResource("8_o5qfo")
+hframes = 2
+vframes = 3
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Player"]
+libraries = {
+"": SubResource("AnimationLibrary_hcfa4")
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+position = Vector2(-2, 1)
+shape = SubResource("RectangleShape2D_u5bmt")
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+limit_left = 0
+limit_top = 0
+limit_right = 1384
+limit_bottom = 704
+
+[node name="CeilingCheck" type="RayCast2D" parent="Player"]
+target_position = Vector2(0, -50)
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]

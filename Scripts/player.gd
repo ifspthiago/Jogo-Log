@@ -9,6 +9,9 @@ extends CharacterBody2D
 
 var pushable_above: Pushables = null # Armazena referência ao objeto pushable acima do player
 
+func _ready() -> void:
+	$AnimationPlayer.play("player")
+
 func _process(delta): # Executa os processos 60 vezes por segundo
 	
 	# Aplica gravidade se não estiver no chão

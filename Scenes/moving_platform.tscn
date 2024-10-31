@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://bnoqj7i4axawo"]
 
 [ext_resource type="Texture2D" uid="uid://dbxele0sajjub" path="res://Art Assets/Tiles/Plataforma (1).png" id="1_eue6i"]
-[ext_resource type="Script" path="res://Scripts/moving_platform.gd" id="1_i5bnw"]
+[ext_resource type="Script" path="res://Scripts/platform1.gd" id="1_i5bnw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xppk5"]
 size = Vector2(102, 18)
